@@ -45,7 +45,7 @@ p {
    	right:0;
    	margin: 5px;
    	border: 1px solid black;
-	border-width: thick;
+	
 
 }
 	
@@ -70,8 +70,7 @@ p {
 @media screen and (min-width: 992px){
 	.col-lg-4{
 		float: left;
-		border: 1px solid black;
-		border-width: thick;
+		border: 1px solid black;	
 		width: 32%;
 		margin-left: 1%;
 
@@ -81,15 +80,13 @@ p {
 @media screen and (min-width: 768px) and (max-width: 991px) {
 	.col-md-6{
 		float: left;
-		border: 1px solid black;
-		border-width: thick;
+		border: 1px solid black;	
 		width: 49%;
 		margin: 0.5%;
 	}
 	.col-md-12{
 		float: left;
-		border: 1px solid black;
-		border-width: thick;
+		border: 1px solid black;	
 		width: 99%;
 		margin: 0.5%
 	}
@@ -101,7 +98,6 @@ p {
 		width: 100%;
 		float: left;
 		border: 1px solid black;
-		border-width: thick;
 		margin-top: 2%;
 		
 	}
