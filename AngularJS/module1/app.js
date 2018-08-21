@@ -1,17 +1,38 @@
 (function () {
 'use strict';
-var x = 'd';
-angular.module('myApp',[])
-.controller('MyController', function ($scope) {
+
+angular.module('LunchCheck',[])
+.controller('LunchCheckController', LunchCheckController);
+LunchCheckController.$inject =['$scope'];
+function LunchCheckController($scope) {
+
 	$scope.name ="";// body..
-	$scope.total = 0;
-	$scope.sum = function () {
-		var totalName = cal($scope.name);
-		$scope.total = totalName;
+	$scope.show ="";
+	
+	$scope.checkname = function () {
+		
+		$scope.show = checkword($scope.name);
+		
+
 	};
 
-	function cal(string) {
+
+
+	function checkword(name) {
+		var words = name.split(',');
+
+		if (name==""){
+
+			return "Please enter data first";
+
+		}else if (words.length <=3){
+			return "Enjoy!" ;
+			
+		}else {
+			return "Too much!" ;
+			
+		}
 		
 	};
-});
+}
 })();
